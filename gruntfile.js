@@ -8,6 +8,14 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+          dist: {
+            files: {
+              'public/js/main.min.js' : 'javascripts/*'
+            }
+          }
+        },
+
     watch: {
       source: {
         files: ['sass/**/*.scss'],

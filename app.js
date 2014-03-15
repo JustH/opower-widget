@@ -14,12 +14,6 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-app.get('/something', function(req, res) {
-  res.render('/index');
-});
-
-
-
 // Set server port
 app.listen(4000);
 console.log('server is running');
