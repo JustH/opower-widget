@@ -1,6 +1,6 @@
 
 // Import Normalize css reset
-@import "lib/normalize.css";
+@import "lib/normalize";
 
 // Import Sass libraries
 // ---------------------------------------------------------
@@ -18,9 +18,8 @@
 
 // UI Patterns and Modules
 // State is addressed within the component code itself
-// @import "ui_patterns/manifest";
-// @import "modules/manifest";
+@import "modules";
 
 // Layouts
-// @import "layouts/manifest";
+@import "layouts";
 

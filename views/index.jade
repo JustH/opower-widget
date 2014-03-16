@@ -5,26 +5,35 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title Opower Energy Usage
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel="stylesheet" href="stylesheets/application.css")
-
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="stylesheets/application.css" type="text/css")
   body
-    .widget-containter
+    //
+      Design/Code Challenge for Opower by Justin Hill.
+      Built with node.js and Express.
+      Markup written in jade and styles written in SCSS(libSass).
+      Uses Foundation for grid and front end styels.
+      View uncompiled source at [github address]
+    // in production, the widget would likely be a <section> or <asside> element of it's own.
+    .widget-container
       header.widget-header
         h1 Your Electricity Savings
       section.widget-content
         .widget-visual
-            p visual goes here
-          ul.widget-button-group.radius
+          p visual goes here
+          ul.widget-button-group
             li: a.widget-button Cars
             li: a.widget-button Trees
             li: a.widget-button C02
+        .widget-data
+          h2 Last month, you saved enough energy to take six cars off the road!
+          p Great job! You used 573 kWH last month, compared to 791 kWh in the same month last year. The resulting savings is enough to offset the energy consumption of six average-size cars for one month.
 
 
 
-
+    // Call jQuery from Google CDN with local fallback.
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     script window.jQuery || document.write('<script src="javascripts/vendor/jquery.min.js"><\/script>')
-
     script(src='js/vendor/fastclick.js')
     script(src='js/vendor/foundation.min.js')
     script(src='js/main.min.js')

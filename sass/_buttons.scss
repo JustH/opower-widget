@@ -1,5 +1,6 @@
 .widget-button-group {
   @include button-group-container();
+  margin: 0 auto;
   & > li {
     @include button-group-style($radius:true);
   }
