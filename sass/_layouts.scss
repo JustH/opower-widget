@@ -17,18 +17,16 @@
 .widget-visual-container {
   @include grid-column(12);
   @media #{$medium-up} {
-    @include grid-column($columns:6);
+    @include grid-column($columns:6, $pull:6);
   }
   text-align: center;
 }
 .widget-data-container {
-  @include grid-column($columns:12, $last-column:true);
+  @include grid-column($columns:12);
   @media #{$medium-up} {
-    @include grid-column($columns:6, $last-column:true);
+    @include grid-column($columns:6, $push:6, $last-column:true);
   }
 }
 
-.widget-header {
-  border-bottom: 1px solid #333;
-}
+
 

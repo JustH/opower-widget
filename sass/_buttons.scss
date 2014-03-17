@@ -7,10 +7,8 @@
   .widget-button {
     @include button;
     background-color: $color-alpha;
-    @media #{$small-only} {
-      padding-left: .8rem;
-      padding-right: .8rem;
-    }
+    padding-left: .8rem;
+    padding-right: .8rem;
     &:hover, &.active {
       background-color: darken( $color-alpha, 10%);
     }
@@ -18,7 +16,7 @@
       padding-right: .5rem;
     }
   }
-
 }
+
 
 

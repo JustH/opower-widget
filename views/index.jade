@@ -19,6 +19,20 @@ html
       header.widget-header
         h1 Your Electricity Savings
       section.widget-content
+        .widget-data-container(data-equalizer-watch)
+          .widget-data.active#cars-data
+            span.icon-cup
+            h2 Last month, you saved enough energy to take <strong>six cars</strong> off the road!
+            p Great job! You used <strong>573 kWH</strong> last month, compared to <strong>791 kWh</strong> in the same month last year. The resulting savings is enough to offset the energy consumption of <strong>six average-size cars for one month.</strong>
+          .widget-data#trees-data
+            span.icon-cup
+            h2 Last month, you saved energy equivilant to planting <strong>seven trees</strong>!
+            p Great job! You used <strong>573 kWH</strong> last month, compared to <strong>791 kWh</strong> in the same month last year. The resulting savings is equivilant to planting <strong>seven trees.</strong>
+          .widget-data#carbon-data
+            span.icon-cup
+            h2 Last month, you saved enough energy to offset <strong>four tons of carbon emmisons</strong>!
+            p Great job! You used <strong>573 kWH</strong> last month, compared to <strong>791 kWh</strong> in the same month last year. The resulting savings is equivilant to offsetting <strong>four tons of carbon emmissions.</strong>
+          canvas#widgetChart.chart(width="300px" height="150px")
         .widget-visual-container(data-equalizer-watch)
           .widget-visual.active#cars-container
           .widget-visual#trees-container
@@ -36,20 +50,6 @@ html
               a.widget-button#carbon-button
                 span.icon-factory
                 | Carbon
-        .widget-data-container(data-equalizer-watch)
-          .widget-data.active#cars-data
-            span.icon-cup
-            h2 Last month, you saved enough energy to take <strong>six cars</strong> off the road!
-            p Great job! You used <strong>573 kWH</strong> last month, compared to <strong>791 kWh</strong> in the same month last year. The resulting savings is enough to offset the energy consumption of <strong>six average-size cars for one month.</strong>
-          .widget-data#trees-data
-            span.icon-cup
-            h2 Last month, you saved energy equivilant to planting <strong>seven trees</strong>!
-            p Great job! You used <strong>573 kWH</strong> last month, compared to <strong>791 kWh</strong> in the same month last year. The resulting savings is equivilant to planting <strong>seven trees.</strong>
-          .widget-data#carbon-data
-            span.icon-cup
-            h2 Last month, you saved enough energy to offset <strong>four tons of carbon emmisons</strong>!
-            p Great job! You used <strong>573 kWH</strong> last month, compared to <strong>791 kWh</strong> in the same month last year. The resulting savings is equivilant to offsetting <strong>four tons of carbon emmissions.</strong>
-          canvas#widgetChart.chart(width="300px" height="150px")
 
 
     // Call jQuery from Google CDN with local fallback.
