@@ -10,10 +10,6 @@
   }
 }
 
-.widget-content{
-  @include clearfix;
-}
-
 .widget-visual-container {
   @include grid-column(12);
   @media #{$medium-up} {
