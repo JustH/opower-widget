@@ -1,5 +1,7 @@
-# Generated CSS output
+# Generated CSS/js output
 public/stylesheets/*.css
+public/js/*.js
+
 
 # No node packages
 node_modules/
