@@ -1,10 +1,20 @@
 .widget-button-group {
   @include button-group-container();
-  margin: 0 auto;
+  display: inline-block;
   & > li {
     @include button-group-style($radius:true);
   }
-  .widget-button { @include button;}
+  .widget-button {
+    @include button;
+    @media #{$small-only} {
+      padding-left: .8rem;
+      padding-right: .8rem;
+    }
+    span {
+      padding-right: .5rem;
+    }
+  }
+
 }
 
 

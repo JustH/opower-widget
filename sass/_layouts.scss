@@ -1,15 +1,36 @@
+body {
+@include linear-gradient( #187ec0 0%, #17294a 100%);
+background-attachment: fixed;
+}
+
 .widget-container {
   @include grid-row();
-  margin-top: 10em;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  @media #{$medium-up} {
+    margin-top: 5rem;
+  }
   .widget-header {
     @include grid-column(12);
   }
 }
-.widget-visual {
-  @include grid-column($columns:6);
+
+.widget-content{
+  @include clearfix;
 }
-.widget-data {
-  @include grid-column($columns:6, $last-column:true);
+
+.widget-visual-container {
+  @include grid-column(12);
+  @media #{$medium-up} {
+    @include grid-column($columns:6);
+  }
+  text-align: center;
+}
+.widget-data-container {
+  @include grid-column($columns:12, $last-column:true);
+  @media #{$medium-up} {
+    @include grid-column($columns:6, $last-column:true);
+  }
 }
 
 .widget-header {

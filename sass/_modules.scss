@@ -1,2 +1,44 @@
-//energy usage widget
+//Bar Chart
+.chart {
+  margin:0 auto;
+  display:block;
+}
+
+
+// visuals
+.widget-visual {
+  font-family: 'opower-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  span {
+    font-size: 4rem;
+    display: inline-block;
+    margin-right: .25em;
+    margin-top: .25em;
+    @media #{$medium-up} {
+      font-size: 5rem;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &.cars {
+      color: $color-alpha;
+    }
+  &.trees {
+    color: $color-bravo;
+  }
+  &.carbon {
+    color: $color-charlie;
+  }
+  }
 
