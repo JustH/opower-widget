@@ -39,4 +39,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
   grunt.registerTask('default', ['sass', 'uglify']);
+  grunt.registerTask('heroku', ['sass', 'uglify']);
 };
