@@ -1,8 +1,3 @@
-body {
-@include linear-gradient( #187ec0 0%, #17294a 100%);
-background-attachment: fixed;
-}
-
 .widget-container {
   @include grid-row();
   background-color: #fff;

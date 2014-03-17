@@ -7,38 +7,51 @@
 
 // visuals
 .widget-visual {
-  font-family: 'opower-icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+  @extend .expandOpen;
+  display:none;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  svg {
+    width:100%;
+    [id^="tree"].active {
+      @extend .bounce;
+      fill: $color-bravo;
+    }
+    [id^="car"].active {
+      @extend .bounce;
+      fill: $color-alpha;
+    }
+    [id^="carbon"].active {
+      @extend .bounce;
+      fill: $color-charlie;
+    }
+  }
+  &.active {
+    display:block;
+  }
+}
+
+.widget-data {
+  @extend .fadeIn;
+  animation-delay: .5s;
+  padding-top: 1.25rem;
+  display:none;
+  &.active {
+    display:block;
+  }
   span {
-    font-size: 4rem;
-    display: inline-block;
-    margin-right: .25em;
-    margin-top: .25em;
-    @media #{$medium-up} {
-      font-size: 5rem;
-    }
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-  &.cars {
-      color: $color-alpha;
-    }
-  &.trees {
-    color: $color-bravo;
-  }
-  &.carbon {
+    float:left;
+    font-size: 4.5rem;
+    margin-top: .5rem;
+    margin-right: .25rem;
     color: $color-charlie;
   }
+  h2{
+    line-height: 1;
+    font-size: 1.6rem;
   }
+  p {
+    line-height: 1;
+  }
+}
 

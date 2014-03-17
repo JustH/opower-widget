@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     uglify: {
           dist: {
             files: {
-              'public/js/main.min.js' : ['javascripts/vendor/fastclick.js', 'javascripts/vendor/foundation.min.js', 'javascripts/vendor/Chart.js', 'javascripts/*.js']
+              'public/js/main.min.js' : ['javascripts/vendor/fastclick.js', 'javascripts/vendor/foundation.min.js', 'javascripts/vendor/Chart.js', 'javascripts/vendor/jquery.svg.js', 'javascripts/vendor/jquery.svgdom.js', 'javascripts/*.js']
             }
           }
         },
