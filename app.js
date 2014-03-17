@@ -15,6 +15,6 @@ app.get('/', function(req, res) {
 });
 
 // Set server port
-app.listen(5000);
+app.listen(process.env.PORT || 4000);
 console.log('server is running');
 
